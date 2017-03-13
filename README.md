@@ -1,2 +1,0 @@
-# amigosaccessorize
-Online shoaping portal
