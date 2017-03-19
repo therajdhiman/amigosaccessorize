@@ -11,7 +11,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    
+     <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -99,9 +101,49 @@
 </nav>
     <div class="container-fluid main-container" >
       <div class="row">
-        <div class="col-xs-12 top-banner"><img src="images/iphone-7.jpg" class="slider-img" /></div> 
-      </div>
+        <div class="col-xs-12 top-banner">
+         
+          <div class="wrapper">
+          <ul id="sb-slider" class="sb-slider" style="max-width:100%;">
+            <li>
+              <a href="#" target="_blank"><img src="images/1.jpg" alt="image1" class="img-responsive"/></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><img src="images/2.jpg" alt="image2" class="img-responsive"/></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><img src="images/3.jpg" alt="image1" class="img-responsive"/></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><img src="images/4.jpg" alt="image1" class="img-responsive"/></a>
+            </li>
+          </ul>
 
+        <div id="shadow" class="shadow img-responsive"></div>
+
+
+        <div id="nav-arrows" class="nav-arrows">
+          <a href="#">Next</a>
+          <a href="#">Previous</a>
+        </div>
+
+
+
+        <div id="nav-dots" class="nav-dots">
+          <span class="nav-dot-current"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+
+
+
+
+      </div><!-- /Banner wrapper -->
+        </div> 
+      </div>
+	  	   
       <div class="row">
         <div class="col-xs-12 product-grid">
           <div class="col-xs-12 sale-shop"><h2 class="heading">Big Sale Discount</h2>
@@ -125,6 +167,7 @@
               
             </div>
 
+
             <div class="col-sm-3 check">
               <div class="col-sm-12 check">
                 <h4 class="heading">iPhone 6</h4>
@@ -145,6 +188,10 @@
               <div class="col-sm-12 check">
                 <h4 class="heading">iPhone 6</h4>
               </div>
+
+
+
+
 
               <div class="col-sm-12 check">
                 <img src="images/iphone-1.png" class="sale-img img-responsive">
@@ -172,8 +219,22 @@
             </div>
              
           </div>  
+
+
+
+
+
+
+
+
+
+
+
+
         </div> 
       </div>
+
+      <div class="row">
 
       <div class="row">
 
@@ -501,5 +562,94 @@
       
 
   </div>
+  
+  
+
+<!--     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+ -->
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script type="text/javascript">
+      $(function() {
+
+
+
+        var Page = (function() {
+
+
+          var $navArrows = $( '#nav-arrows' ).hide(),
+            $navDots = $( '#nav-dots' ).hide(),
+            $nav = $navDots.children( 'span' ),
+            $shadow = $( '#shadow' ).hide(),
+            slicebox = $( '#sb-slider' ).slicebox( {
+              onReady : function() {
+                $navArrows.show();
+                $navDots.show();
+                $shadow.show();
+              },
+              autoplay : true,
+              onBeforeChange : function( pos ) {
+
+                $nav.removeClass( 'nav-dot-current' );
+                $nav.eq( pos ).addClass( 'nav-dot-current' );
+              }
+            } ),
+            
+
+            init = function() {
+              initEvents();
+              
+            },
+
+
+            initEvents = function() {
+
+
+              // add navigation events
+             $navArrows.children( ':first' ).on( 'click', function() {
+
+               slicebox.next();
+                return false;
+
+              } );
+
+
+              $navArrows.children( ':last' ).on( 'click', function() {
+            
+                slicebox.previous();
+                return false;
+
+              } );
+
+
+
+              $nav.each( function( i ) {              
+
+                $( this ).on( 'click', function( event ) {                 
+
+                  var $dot = $( this );                 
+                  if( !slicebox.isActive() ) {
+                    $nav.removeClass( 'nav-dot-current' );
+                    $dot.addClass( 'nav-dot-current' );
+                  
+                  }
+                  
+                  slicebox.jump( i + 1 );
+                  return false;
+                
+                } );                
+              } );
+
+            };
+
+            return { init : init };
+
+        })();
+
+
+        Page.init();
+
+      });
+    </script>
+  
   </body>
 </html>

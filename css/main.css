@@ -4,8 +4,10 @@
 	padding-right: 0px;
 	padding-left: 0px;
 	padding-top: 7px;
-    text-align: right
+    text-align: right;
+    
 }
+
 .top-header>ul>li
 {
 	display: inline-block;
@@ -41,6 +43,9 @@
 {
 	padding-right: 0px;
     padding-left: 0px;
+}
+.top-banner{
+	margin-top: 120px;
 }
 .main-container .top-banner .slider-img
 {
