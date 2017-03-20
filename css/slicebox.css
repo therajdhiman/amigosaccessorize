@@ -29,6 +29,8 @@
 
 .top-banner .sb-slider img {
 	display: block;
+	max-width: 992px;
+	max-height: 420px;
 	margin: 0 auto;
 
 }
@@ -65,3 +67,10 @@
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
+
+/*@media  screen and (max-width: 768px){
+	.top-banner .sb-slider img {
+		max-width:none;
+		height: none;
+	}
+}*/
