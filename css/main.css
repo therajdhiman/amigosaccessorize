@@ -96,6 +96,11 @@
     transition: all 1.0s ease;
 
 }
+.main-container .mobile-product  .img-product
+{
+	height: 290px;
+	width: 100%;
+}
 .main-container .mobile-product .shop:hover
 {
 	background-color: #46b8da;
@@ -109,6 +114,8 @@
 	display: block;
 	margin: 0 auto;
 	padding-bottom: 26px;
+	max-width: 220px;
+	max-height: 260px;
 }
 .main-container .mobile-product .shop-box .shop .price
 {
@@ -208,6 +215,18 @@
 	padding-right: 0px;
 	padding-left: 0px;
 }
+.main-container .carousel .carousel-inner .slide-box .slide-box-product .slide-product-img
+{
+	height: 250px;
+    width: 100%;
+}
+.main-container .carousel .carousel-inner .slide-box .slide-box-product .slide-product-img .slide-image
+{
+	max-width: 220px;
+    max-height: 260px;
+    display: block;
+    margin:0 auto;
+}
 .main-container .carousel .carousel-inner .slide-box .slide-box-product .slide-bottom-btn
 {
 
@@ -224,11 +243,18 @@
 {
 	margin-right: 0px;
 	margin-left: 0px;
+	background-color: black;
 }
 .main-container .footer
 {
-	background-color: black;
+	
 	padding: 5px 50px;
 	color: white;
 	font-style: italic;
+}
+
+
+.main-container .apple-product
+{
+	margin-top:85px;
 }
