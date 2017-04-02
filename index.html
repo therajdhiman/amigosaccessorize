@@ -50,137 +50,8 @@
 //     clea
     </script>
     <style type="text/css">
-            .carousel-showmanymoveone .carousel-control {
-  width: 4%;
-  background-image: none;
-}
-.carousel-showmanymoveone .carousel-control.left {
-  margin-left: 15px;
-}
-.carousel-showmanymoveone .carousel-control.right {
-  margin-right: 15px;
-}
-.carousel-showmanymoveone .cloneditem-1,
-.carousel-showmanymoveone .cloneditem-2,
-.carousel-showmanymoveone .cloneditem-3 {
-  display: none;
-}
-@media all and (min-width: 768px) {
-  .carousel-showmanymoveone .carousel-inner > .active.left,
-  .carousel-showmanymoveone .carousel-inner > .prev {
-    left: -50%;
-  }
-  .carousel-showmanymoveone .carousel-inner > .active.right,
-  .carousel-showmanymoveone .carousel-inner > .next {
-    left: 50%;
-  }
-  .carousel-showmanymoveone .carousel-inner > .left,
-  .carousel-showmanymoveone .carousel-inner > .prev.right,
-  .carousel-showmanymoveone .carousel-inner > .active {
-    left: 0;
-  }
-  .carousel-showmanymoveone .carousel-inner .cloneditem-1 {
-    display: block;
-  }
-}
-@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
-  .carousel-showmanymoveone .carousel-inner > .item.active.right,
-  .carousel-showmanymoveone .carousel-inner > .item.next {
-    -webkit-transform: translate3d(50%, 0, 0);
-            transform: translate3d(50%, 0, 0);
-    left: 0;
-  }
-  .carousel-showmanymoveone .carousel-inner > .item.active.left,
-  .carousel-showmanymoveone .carousel-inner > .item.prev {
-    -webkit-transform: translate3d(-50%, 0, 0);
-            transform: translate3d(-50%, 0, 0);
-    left: 0;
-  }
-  .carousel-showmanymoveone .carousel-inner > .item.left,
-  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
-  .carousel-showmanymoveone .carousel-inner > .item.active {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    left: 0;
-  }
-}
-@media all and (min-width: 992px) {
-  .carousel-showmanymoveone .carousel-inner > .active.left,
-  .carousel-showmanymoveone .carousel-inner > .prev {
-    left: -25%;
-  }
-  .carousel-showmanymoveone .carousel-inner > .active.right,
-  .carousel-showmanymoveone .carousel-inner > .next {
-    left: 25%;
-  }
-  .carousel-showmanymoveone .carousel-inner > .left,
-  .carousel-showmanymoveone .carousel-inner > .prev.right,
-  .carousel-showmanymoveone .carousel-inner > .active {
-    left: 0;
-  }
-  .carousel-showmanymoveone .carousel-inner .cloneditem-2,
-  .carousel-showmanymoveone .carousel-inner .cloneditem-3 {
-    display: block;
-  }
-}
-@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
-  .carousel-showmanymoveone .carousel-inner > .item.active.right,
-  .carousel-showmanymoveone .carousel-inner > .item.next {
-    -webkit-transform: translate3d(25%, 0, 0);
-            transform: translate3d(25%, 0, 0);
-    left: 0;
-  }
-  .carousel-showmanymoveone .carousel-inner > .item.active.left,
-  .carousel-showmanymoveone .carousel-inner > .item.prev {
-    -webkit-transform: translate3d(-25%, 0, 0);
-            transform: translate3d(-25%, 0, 0);
-    left: 0;
-  }
-  .carousel-showmanymoveone .carousel-inner > .item.left,
-  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
-  .carousel-showmanymoveone .carousel-inner > .item.active {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    left: 0;
-  }
-}
-        </style>
-        <script type='text/javascript'>
-        
-        $(document).ready(function() {
-        
-            (function(){
-  // setup your carousels as you normally would using JS
-  // or via data attributes according to the documentation
-  // http://getbootstrap.com/javascript/#carousel
-  $('#carousel123').carousel({ interval: 2000 });
-  $('#carouselABC').carousel({ interval: 3600 });
-}());
-
-(function(){
-  $('.carousel-showmanymoveone .item').each(function(){
-    var itemToClone = $(this);
-
-    for (var i=1;i<4;i++) {
-      itemToClone = itemToClone.next();
-
-      // wrap around if at end of item collection
-      if (!itemToClone.length) {
-        itemToClone = $(this).siblings(':first');
-      }
-
-      // grab item, clone, add marker class, add to collection
-      itemToClone.children(':first-child').clone()
-        .addClass("cloneditem-"+(i))
-        .appendTo($(this));
-    }
-  });
-}());
-        
-        });
-        
-        </script>
-         
+    	
+    </style>  
   </head>
   <body>
 
@@ -235,7 +106,7 @@
         </li>
 
          <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Used<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Used1<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="apple-uesd.html">Apple</a></li>
             <li><a href="samsung-used.html">Samsung</a></li>
@@ -385,158 +256,160 @@
       </div>
 
       <div class="col-xs-12 sale-shop"><h2 class="heading">Mobile Phone Shopping</h2></div>
+		<div class="draft posts" id="draft_1">
+      		<div class="carousel slide row product-slide-row" data-ride="carousel" data-interval="false" data-type="multi" id="fruitscarousel">
+      
+          <div class="carousel-inner">
+              <div class="item active">
+                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+                    <div class="col-sm-12 slide-box-product">
 
+                      <div class="col-sm-12 ">
+                        <h4 class="heading">iPhone SE</h4>
+                      </div>
 
-			<div class="row">
-			    <div class="col-md-12">
-			      <div class="carousel carousel-showmanymoveone slide" id="carouselA">
-			        <div class="carousel-inner">
-			          <div class="item active">
-			            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-	                    <div class="col-sm-12 slide-box-product">
+                      <div class="col-sm-12 slide-product-img">
+                        <img src="images/iphone-se-product.png" class="slide-img slide-image">
+                        
+                      </div>
 
-	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone SE</h4>
-	                      </div>
+                      <div class="col-sm-12 slide-bottom-btn">
+                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+                      </div>
 
-	                      <div class="col-sm-12 slide-product-img">
-	                        <img src="images/iphone-se-product.png" class="slide-img slide-image">
-	                        
-	                      </div>
+                      
+                    </div>
+                    
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 
-	                      <div class="col-sm-12 slide-bottom-btn">
-	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-	                      </div>
+                      <div class="col-sm-12 slide-box-product">
 
-	                      
-	                    </div>
-	                    
-	                  </div>
-			          </div>
-			          <div class="item">
-			            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+                      <div class="col-sm-12">
+                        <h4 class="heading">iPhone 5S</h4>
+                      </div>
 
-	                      <div class="col-sm-12 slide-box-product">
+                      <div class="col-sm-12 slide-product-img">
+                        <img src="images/iphone-5s-product.png" class="slide-img slide-image">
+                        
+                      </div>
 
-	                      <div class="col-sm-12">
-	                        <h4 class="heading">iPhone 5S</h4>
-	                      </div>
+                      <div class="col-sm-12 slide-bottom-btn">
+                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+                      </div>
 
-	                      <div class="col-sm-12 slide-product-img">
-	                        <img src="images/iphone-5s-product.png" class="slide-img slide-image">
-	                        
-	                      </div>
+                      
+                    </div>
+                  
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+                    <div class="col-sm-12 slide-box-product">
 
-	                      <div class="col-sm-12 slide-bottom-btn">
-	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-	                      </div>
+                      <div class="col-sm-12 ">
+                        <h4 class="heading">HTC</h4>
+                      </div>
 
-	                      
-	                    </div>
-	                  
-	                  </div>
-			          </div>
-			          <div class="item">
-			            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-	                    <div class="col-sm-12 slide-box-product">
+                      <div class="col-sm-12 slide-product-img">
+                        <img src="images/htc-phone.png" class="slide-img slide-image">
+                        
+                      </div>
 
-	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">HTC</h4>
-	                      </div>
+                      <div class="col-sm-12 slide-bottom-btn">
+                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+                      </div>
 
-	                      <div class="col-sm-12 slide-product-img">
-	                        <img src="images/htc-phone.png" class="slide-img slide-image">
-	                        
-	                      </div>
+                      
+                    </div>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+                    <div class="col-sm-12 slide-box-product">
 
-	                      <div class="col-sm-12 slide-bottom-btn">
-	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-	                      </div>
+                      <div class="col-sm-12 ">
+                        <h4 class="heading">iPhone 6s Plus</h4>
+                      </div>
 
-	                      
-	                    </div>
-	                  </div>
-			          </div>          
-			          <div class="item">
-			            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-	                    <div class="col-sm-12 slide-box-product">
+                      <div class="col-sm-12 slide-product-img">
+                        <img src="images/iphone-6s_pus-product.png" class="slide-img slide-image">
+                        
+                      </div>
 
-	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone 6s Plus</h4>
-	                      </div>
+                      <div class="col-sm-12 slide-bottom-btn">
+                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+                      </div>
 
-	                      <div class="col-sm-12 slide-product-img">
-	                        <img src="images/iphone-6s_pus-product.png" class="slide-img slide-image">
-	                        
-	                      </div>
+                      
+                    </div>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+                    <div class="col-sm-12 slide-box-product">
 
-	                      <div class="col-sm-12 slide-bottom-btn">
-	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-	                      </div>
+                      <div class="col-sm-12 ">
+                        <h4 class="heading">Galaxy On7 Black</h4>
+                      </div>
 
-	                      
-	                    </div>
-	                  </div>
-			          </div>
-			          <div class="item">
-				         <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-		                    <div class="col-sm-12 slide-box-product">
+                      <div class="col-sm-12 slide-product-img">
+                        <img src="images/samsung-galaxy-on7-sm-1-product.png" class="slide-img slide-image">
+                        
+                      </div>
 
-		                      <div class="col-sm-12 ">
-		                        <h4 class="heading">Galaxy On7 Black</h4>
-		                      </div>
+                      <div class="col-sm-12 slide-bottom-btn">
+                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+                      </div>
 
-		                      <div class="col-sm-12 slide-product-img">
-		                        <img src="images/samsung-galaxy-on7-sm-1-product.png" class="slide-img slide-image">
-		                        
-		                      </div>
+                      
+                    </div>
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+                    <div class="col-sm-12 slide-box-product">
 
-		                      <div class="col-sm-12 slide-bottom-btn">
-		                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-		                      </div>
+                      <div class="col-sm-12">
+                        <h4 class="heading">iPhone 7s</h4>
+                      </div>
 
-		                      
-		                    </div>
-		                  </div>
-			          </div>
-			          <div class="item">
-				         <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-		                    <div class="col-sm-12 slide-box-product">
+                      <div class="col-sm-12 slide-product-img">
+                        <img src="images/iphone-7s-product.png" class="slide-img slide-image">
+                        
+                      </div>
 
-		                      <div class="col-sm-12">
-		                        <h4 class="heading">iPhone 7s</h4>
-		                      </div>
+                      <div class="col-sm-12 slide-bottom-btn">
+                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+                      </div>
 
-		                      <div class="col-sm-12 slide-product-img">
-		                        <img src="images/iphone-7s-product.png" class="slide-img slide-image">
-		                        
-		                      </div>
+                      
+                    </div>
+                  </div>
+              </div>
+          </div>
 
-		                      <div class="col-sm-12 slide-bottom-btn">
-		                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-		                      </div>
+          <a class="left carousel-control" href="draft_1 #fruitscarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" href="draft_1 #fruitscarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
 
-		                      
-		                    </div>
-		                  </div>
-			          </div>
-			          
-			        </div>
-			        <a class="left carousel-control" href="#carouselA" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-			        <a class="right carousel-control" href="#carouselA" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-			      </div>
-			    </div>
-    	 	</div>		 
+     
+     		</div>
+     	</div>	 
 
 
 
       	 <div class="col-xs-12 sale-shop"><h2 class="heading">ipad Shopping</h2></div>
-      	 <div class="row">
-		    <div class="col-md-12">
-		      <div class="carousel carousel-showmanymoveone slide" id="carousel123">
-		        <div class="carousel-inner">
-		          <div class="item active">
-		            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+
+
+
+      	 <div class="draft posts" id="draft_2">
+	      <div class="carousel slide row product-slide-row" data-ride="carousel" data-interval="false" data-type="multi" id="fruitscarousel2">
+
+	          <div class="carousel-inner">
+	              <div class="item active">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 	                    <div class="col-sm-12 slide-box-product">
 
 	                      <div class="col-sm-12 ">
@@ -556,152 +429,9 @@
 	                    </div>
 	                    
 	                  </div>
-		          </div>
-		          <div class="item">
-		             <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-
-	                	<div class="col-sm-12 slide-box-product">
-
-		                      <div class="col-sm-12">
-		                        <h4 class="heading">iPhone 5S</h4>
-		                      </div>
-
-		                      <div class="col-sm-12 slide-product-img">
-		                        <img src="images/iphone-5s-product.png" class="slide-img slide-image">
-		                        
-		                      </div>
-
-		                      <div class="col-sm-12 slide-bottom-btn">
-		                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-		                      </div>
-	                	</div>
-	                  
-	              	 </div>
-		          </div>
-		          <div class="item">
-		          	<div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-	                    <div class="col-sm-12 slide-box-product">
-
-	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone 6s Plus</h4>
-	                      </div>
-
-	                      <div class="col-sm-12 slide-product-img">
-	                        <img src="images/iphone-6s_pus-product.png" class="slide-img slide-image">
-	                        
-	                      </div>
-
-	                      <div class="col-sm-12 slide-bottom-btn">
-	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-	                      </div>
-
-	                      
-	                    </div>
-	                </div>
-		          </div>         
-		          <div class="item">
-		            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-	                    <div class="col-sm-12 slide-box-product">
-
-	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone 6S</h4>
-	                      </div>
-
-	                      <div class="col-sm-12 slide-product-img">
-	                        <img src="images/iphone-6s-product.png" class="slide-img slide-image">
-	                        
-	                      </div>
-
-	                      <div class="col-sm-12 slide-bottom-btn">
-	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-	                      </div>
-
-	                      
-	                   	</div>
-	                </div>
-
-		          </div>
-		          <div class="item">
-		            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-	                    <div class="col-sm-12 slide-box-product">
-
-	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone 7</h4>
-	                      </div>
-
-	                      <div class="col-sm-12 slide-product-img">
-	                        <img src="images/iphone-7-product.png" class="slide-img slide-image">
-	                        
-	                      </div>
-
-	                      <div class="col-sm-12 slide-bottom-btn">
-	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-	                      </div>
-
-	                      
-	                    </div>
-	                  </div>
-		          </div>
-		          <div class="item">
-		           	<div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-	                    <div class="col-sm-12 slide-box-product">
-
-	                      <div class="col-sm-12">
-	                        <h4 class="heading">iPhone 7s</h4>
-	                      </div>
-
-	                      <div class="col-sm-12 slide-product-img">
-	                        <img src="images/iphone-7s-product.png" class="slide-img slide-image">
-	                        
-	                      </div>
-
-	                      <div class="col-sm-12 slide-bottom-btn">
-	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-	                      </div>
-
-	                      
-	                    </div>
-	                  </div>
-	              </div>
-		          
-		        </div>
-		        <a class="left carousel-control" href="#carousel123" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-		        <a class="right carousel-control" href="#carousel123" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-		      </div>
-		    </div>
-		  </div>
-
-	    
-
-      	 <div class="col-xs-12 sale-shop"><h2 class="heading"> Used Mobile</h2></div>
-      	 
-	      <div class="carousel carousel-showmanymoveone slide" id="carousel1">
-
-	          <div class="carousel-inner">
-	              <div class="item active">
-	                  <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-	                    <div class="col-sm-12 slide-box-product">
-
-	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone SE</h4>
-	                      </div>
-
-	                      <div class="col-sm-12 slide-product-img">
-	                        <img src="images/iphone-se-product.png" class="slide-img slide-image">
-	                        
-	                      </div>
-
-	                      <div class="col-sm-12 slide-bottom-btn">
-	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
-	                      </div>
-
-	                      
-	                    </div>
-	                    
-	                  </div>
 	              </div>
 	              <div class="item">
-	                  <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 
 	                      <div class="col-sm-12 slide-box-product">
 
@@ -724,7 +454,7 @@
 	                  </div>
 	              </div>
 	              <div class="item">
-	                  <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 	                    <div class="col-sm-12 slide-box-product">
 
 	                      <div class="col-sm-12 ">
@@ -745,7 +475,7 @@
 	                  </div>
 	              </div>
 	              <div class="item">
-	                  <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 	                    <div class="col-sm-12 slide-box-product">
 
 	                      <div class="col-sm-12 ">
@@ -766,7 +496,7 @@
 	                  </div>
 	              </div>
 	              <div class="item">
-	                  <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 	                    <div class="col-sm-12 slide-box-product">
 
 	                      <div class="col-sm-12 ">
@@ -787,7 +517,7 @@
 	                  </div>
 	              </div>
 	              <div class="item">
-	                  <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 	                    <div class="col-sm-12 slide-box-product">
 
 	                      <div class="col-sm-12">
@@ -809,20 +539,161 @@
 	              </div>
 	          </div>
 
-	          <a class="left carousel-control" href="#carousel1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-	          <a class="right carousel-control" href="#carousel1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
+	          <a class="left carousel-control" href="draft_2 #fruitscarousel2" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+	          <a class="right carousel-control" href="draft_2 #fruitscarousel2" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
 
 	      </div>
-	   
+	     </div> 
+
+      	 <div class="col-xs-12 sale-shop"><h2 class="heading"> Used Mobile</h2></div>
+      	 <div class="draft posts" id="draft_3">	
+	      <div class="carousel slide row product-slide-row" data-ride="carousel" data-interval="false" data-type="multi" id="fruitscarousel3">
+
+	          <div class="carousel-inner">
+	              <div class="item active">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+	                    <div class="col-sm-12 slide-box-product">
+
+	                      <div class="col-sm-12 ">
+	                        <h4 class="heading">iPhone SE</h4>
+	                      </div>
+
+	                      <div class="col-sm-12 slide-product-img">
+	                        <img src="images/iphone-se-product.png" class="slide-img slide-image">
+	                        
+	                      </div>
+
+	                      <div class="col-sm-12 slide-bottom-btn">
+	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+	                      </div>
+
+	                      
+	                    </div>
+	                    
+	                  </div>
+	              </div>
+	              <div class="item">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+
+	                      <div class="col-sm-12 slide-box-product">
+
+	                      <div class="col-sm-12">
+	                        <h4 class="heading">iPhone 5S</h4>
+	                      </div>
+
+	                      <div class="col-sm-12 slide-product-img">
+	                        <img src="images/iphone-5s-product.png" class="slide-img slide-image">
+	                        
+	                      </div>
+
+	                      <div class="col-sm-12 slide-bottom-btn">
+	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+	                      </div>
+
+	                      
+	                    </div>
+	                  
+	                  </div>
+	              </div>
+	              <div class="item">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+	                    <div class="col-sm-12 slide-box-product">
+
+	                      <div class="col-sm-12 ">
+	                        <h4 class="heading">iPhone 6S</h4>
+	                      </div>
+
+	                      <div class="col-sm-12 slide-product-img">
+	                        <img src="images/iphone-6s-product.png" class="slide-img slide-image">
+	                        
+	                      </div>
+
+	                      <div class="col-sm-12 slide-bottom-btn">
+	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+	                      </div>
+
+	                      
+	                    </div>
+	                  </div>
+	              </div>
+	              <div class="item">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+	                    <div class="col-sm-12 slide-box-product">
+
+	                      <div class="col-sm-12 ">
+	                        <h4 class="heading">iPhone 6s Plus</h4>
+	                      </div>
+
+	                      <div class="col-sm-12 slide-product-img">
+	                        <img src="images/iphone-6s_pus-product.png" class="slide-img slide-image">
+	                        
+	                      </div>
+
+	                      <div class="col-sm-12 slide-bottom-btn">
+	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+	                      </div>
+
+	                      
+	                    </div>
+	                  </div>
+	              </div>
+	              <div class="item">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+	                    <div class="col-sm-12 slide-box-product">
+
+	                      <div class="col-sm-12 ">
+	                        <h4 class="heading">iPhone 7</h4>
+	                      </div>
+
+	                      <div class="col-sm-12 slide-product-img">
+	                        <img src="images/iphone-7-product.png" class="slide-img slide-image">
+	                        
+	                      </div>
+
+	                      <div class="col-sm-12 slide-bottom-btn">
+	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+	                      </div>
+
+	                      
+	                    </div>
+	                  </div>
+	              </div>
+	              <div class="item">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
+	                    <div class="col-sm-12 slide-box-product">
+
+	                      <div class="col-sm-12">
+	                        <h4 class="heading">iPhone 7s</h4>
+	                      </div>
+
+	                      <div class="col-sm-12 slide-product-img">
+	                        <img src="images/iphone-7s-product.png" class="slide-img slide-image">
+	                        
+	                      </div>
+
+	                      <div class="col-sm-12 slide-bottom-btn">
+	                        <a href="#" class="col-sm-12 btn btn-info add" role="button">Add To Cart</a>
+	                      </div>
+
+	                      
+	                    </div>
+	                  </div>
+	              </div>
+	          </div>
+
+	          <a class="left carousel-control" href="draft_3 #fruitscarousel3" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+	          <a class="right carousel-control" href="draft_3 #fruitscarousel3" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
+
+	      </div>
+	     </div> 
 
       <div class="col-xs-12 sale-shop"><h2 class="heading"> Accessorise</h2></div>
+      <div class="draft posts" id="draft_4">
+	      <div class="carousel slide row product-slide-row" data-ride="carousel" data-type="multi" data-interval="false" id="fruitscarousel4">
 
-      <div class="row">
-	    <div class="col-md-12">
-	      <div class="carousel carousel-showmanymoveone slide" id="carouselB">
-	        <div class="carousel-inner">
-	          <div class="item active">
-	            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+	          <div class="carousel-inner">
+	              <div class="item active">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 	                    <div class="col-sm-12 slide-box-product">
 
 	                      <div class="col-sm-12 ">
@@ -842,13 +713,14 @@
 	                    </div>
 	                    
 	                  </div>
-	             </div>     
-	          <div class="item">
-	          	<div class="col-md-3 col-sm-6 col-xs-12 slide-box">
-	                    <div class="col-sm-12 slide-box-product">
+	              </div>
+	              <div class="item">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 
-	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone Headphone</h4>
+	                      <div class="col-sm-12 slide-box-product">
+
+	                      <div class="col-sm-12">
+	                        <h4 class="heading">iPhone 5S</h4>
 	                      </div>
 
 	                      <div class="col-sm-12 slide-product-img">
@@ -862,15 +734,15 @@
 
 	                      
 	                    </div>
-	                    
+	                  
 	                  </div>
-	           </div>
-	          <div class="item">
-	            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+	              </div>
+	              <div class="item">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 	                    <div class="col-sm-12 slide-box-product">
 
 	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone Headphone</h4>
+	                        <h4 class="heading">iPhone 6S</h4>
 	                      </div>
 
 	                      <div class="col-sm-12 slide-product-img">
@@ -884,15 +756,14 @@
 
 	                      
 	                    </div>
-	                    
 	                  </div>
-	          </div>          
-	          <div class="item">
-	            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+	              </div>
+	              <div class="item">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 	                    <div class="col-sm-12 slide-box-product">
 
 	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone Headphone</h4>
+	                        <h4 class="heading">iPhone 6s Plus</h4>
 	                      </div>
 
 	                      <div class="col-sm-12 slide-product-img">
@@ -906,15 +777,14 @@
 
 	                      
 	                    </div>
-	                    
 	                  </div>
-	          </div>  
-	           <div class="item">
-	            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+	              </div>
+	              <div class="item">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 	                    <div class="col-sm-12 slide-box-product">
 
 	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone Headphone</h4>
+	                        <h4 class="heading">iPhone 7</h4>
 	                      </div>
 
 	                      <div class="col-sm-12 slide-product-img">
@@ -928,15 +798,14 @@
 
 	                      
 	                    </div>
-	                    
 	                  </div>
-	          </div>  
-	           <div class="item">
-	            <div class="col-md-3 col-sm-6 col-xs-12 slide-box">
+	              </div>
+	              <div class="item">
+	                  <div class="col-md-3 col-sm-4 col-xs-12 slide-box">
 	                    <div class="col-sm-12 slide-box-product">
 
-	                      <div class="col-sm-12 ">
-	                        <h4 class="heading">iPhone Headphone</h4>
+	                      <div class="col-sm-12">
+	                        <h4 class="heading">iPhone 7s</h4>
 	                      </div>
 
 	                      <div class="col-sm-12 slide-product-img">
@@ -950,21 +819,43 @@
 
 	                      
 	                    </div>
-	                    
 	                  </div>
-	          </div>  
-	          
-	        </div>
-	        <a class="left carousel-control" href="#carouselB" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-	        <a class="right carousel-control" href="#carouselB" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+	              </div>
+	          </div>
+
+	          <a class="left carousel-control" href="draft_4 #fruitscarousel4" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+	          <a class="right carousel-control" href="draft_4 #fruitscarousel4" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
+
 	      </div>
-	    </div>
-	  </div>  
+      </div>
+
+
      
+      <!-- <div class="row footer-row">
+
+        <div class="col-sm-12 footer">
+
+            <u><h2>Amigos Accessorize</h2></u>
+
+            <h3>CONTACT DETAIL</h3>
+
+           <span>No.123 Pellentesque nec erat.</span><br/>
+          <span>Aenean semper, neque non faucibus.</span><br/>
+           <span>Phone. (123) 456-7890</span><br/>
+           <span>Fax. (123) 456-7890</span><br/>
+           <span>E-mail. first.last@example.com</span>
+          
+        </div>
+        
+      </div> -->
+      
 
   </div>
 
   
+  
+<!--     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+ -->
 
   </body>
 </html>
