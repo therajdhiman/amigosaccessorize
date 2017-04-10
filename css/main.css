@@ -16,20 +16,29 @@
 }
 
 .logo{
-	position: relative;
+	position: absolute;
 	max-width: 110px;
-	margin-right: 10px;	
+/*	margin-right: 10px;	*/
+	top:0px;
+	left: 0px;	 
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+.main{
 	background-color: #fff;
 	border:2px solid gray;
 	max-height: 53px;
 	margin-top: 30px;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	background-color: #fff;
+	border:2px solid gray;
+/*	max-height: 53px;*/
+}
+
 .navbar-default{
 	border-color: #fff;
+	background-color: #fff;
 }
 
 .main{
@@ -67,6 +76,10 @@
 	background-color: #fff;
 }
 
+.navbar-right{
+	margin-right: 0px;
+}
+
 /*.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
 	background-color: #fff;
 }
@@ -79,11 +92,18 @@
 	width: 1000px;
 }*/
 
+@media (min-width: 320px) and (max-width: 767px){
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	/*	height: auto;*/
+		width: 100%;
+	    margin: 0px;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 	.navbar-default{
 		background-color: #fff;
 	}
-
 
 	.navbar-nav .open .dropdown-menu {
 		position: static;
@@ -128,9 +148,9 @@
 		margin-top: 0px;	
     }
 
-    .navbar-default .navbar-toggle{
+    /*.navbar-default .navbar-toggle{
     	margin-top: 40px;
-    }
+    }*/
     .navbar-nav {
         float: none!important;
         /*margin: 7.5px -15px;*/
@@ -198,11 +218,11 @@
 	background-color: #5bc0de;
 }
 
-.main-container
+/*.main-container
 {
 	padding-right: 0px;
     padding-left: 0px;
-}
+}*/
 .top-banner{
 	margin-top: 120px;
 }
@@ -352,9 +372,7 @@
 }
 
 @media (max-width: 767px) {
-	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-		height: auto;
-	}
+	
 	.navbar-default{
 		background-color: #fff;
 	}
