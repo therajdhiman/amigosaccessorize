@@ -98,6 +98,12 @@
 		width: 100%;
 	    margin: 0px;
 	}
+
+	.dropdown-menu>li>a:hover{
+		border-right: 0px;
+		border-left: 3px solid #5bc0de;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -131,6 +137,12 @@
 		color: #333;
 		white-space: nowrap;
 	}
+
+	.dropdown-menu>li>a:hover{
+		border-right: 0px;
+		border-left: 4px solid #5bc0de;
+	}
+
     .navbar-header {
         float: none;
     }
