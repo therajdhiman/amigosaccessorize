@@ -1,18 +1,7 @@
-.top-header
+.top-header>div
 {
-	background-color: black;
-	padding-right: 0px;
-	padding-left: 0px;
-	padding-top: 7px;
-    text-align: right;
+    float: right;
     
-}
-
-.top-header>ul>li
-{
-	display: inline-block;
-	padding: 0px 12px;
-	color: white;
 }
 
 .logo{
@@ -228,6 +217,10 @@
 .navbar-default .navbar-nav>.open>a
 {
 	background-color: #5bc0de;
+}
+.main .navbar-menu .dropdown .dropdown-list
+{
+	left: 0px;
 }
 
 /*.main-container
