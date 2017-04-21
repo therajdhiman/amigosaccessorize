@@ -452,3 +452,23 @@
 {
 	margin-top:85px;
 }
+
+/* Billing address  */
+.billing .billing-heading
+{
+	background-color: #CFCFCF;
+	padding-left: 28px;
+    padding-bottom: 0px;
+    border-bottom: 5px solid black;
+}
+
+.billing .billing-heading h2
+{
+	margin-bottom: 2px;
+}
+
+.billing .form-bill
+{
+    padding: 34px 40px 10px 40px;
+    border: 2px solid #CFCFCF;
+}
