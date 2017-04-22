@@ -1,4 +1,8 @@
 jQuery(document).ready(function() {
+
+   $('#fruitscarousel').carousel({
+      interval: 10000
+    });
         
  $('.carousel[data-type="multi"] .item').each(function(){
   var next = $(this).next();
