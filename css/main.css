@@ -1,3 +1,17 @@
+a{
+	outline: 0;
+}
+
+a:focus,a:hover,a:visited{
+	text-decoration: none;
+	outline: 0;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	outline: 0;
+    outline-offset:0;
+}
+
 .main-menu{
 	max-width: 900px;
 }
@@ -220,6 +234,10 @@
 		width: 100%;
 	    margin: 0px;
 	}
+
+	/*.dropdown-menu>li>a{
+		margin-left:15px; 
+	}*/
 
 	.dropdown-menu>li>a:hover{
 		border-right: 0px;
@@ -450,3 +468,170 @@
     padding: 34px 40px 10px 40px;
     border: 2px solid #CFCFCF;
 }
+
+/*		Review 		*/
+
+
+
+.main-container .review{
+	margin-top: 100px;
+}
+
+.main-container .reviews{
+	border-top:1px dotted ;
+	margin: 10px;
+	padding: 10px;
+}
+
+.main-container .reviews> p{
+	min-height: 30px;
+	padding: 15px 10px;
+}
+
+.main-container .reviews .update{
+	display:inline-block;
+	vertical-align: top;
+	padding: 5px 20px;
+	min-width: 49%;
+}
+
+.main-container .reviews> img{
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	margin: 0 10px;	
+}
+
+.main-container .reviews .name{
+	color: #337AB7;
+	font-weight: bold;
+}
+
+.main-container .reviews .update> a{
+	outline: 0;
+}
+
+.main-container .reviews .update> a span{
+	border:1px solid gray;
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 22px;
+	margin: 0 5px;
+	padding: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+	.main-container .reviews .update{
+		display: block;
+		padding: 5px 10px;
+	}
+} 
+
+/*	End Review		*/
+
+/*	Delivery Page 	*/
+
+.main-container .delivery-page{
+	margin-top: 100px;
+	padding: 15px;
+}
+
+.main-container .delivery-page .product-detail, .product-status{
+	box-shadow: 0 0 2px;	
+	margin: 15px 0;
+}
+
+.main-container .delivery-page .transit{
+	color: green;
+	font-weight: bold;
+}
+
+.main-container .delivery-page .horizontal{
+	border:1px solid #b2cee7;
+	margin: 20px 0px;
+}
+
+.main-container .delivery-page .delivery-status{
+	/*border:1px solid;*/
+	margin: 10px;
+}
+
+.main-container .delivery-page  .delivery-status .show-more{
+	color:#337ab7;
+	font-weight: bold;
+}
+
+.main-container .delivery-page  .delivery-status .status-detail{
+	border-bottom:2px solid #b2cee7;
+	margin: 20px 0px;
+	position: relative;
+	padding: 0px;
+
+}
+
+.main-container .delivery-page  .delivery-status .status{
+	padding: 20px 0;
+}
+
+.main-container .delivery-page  .delivery-status .status .order-img{
+
+	border-radius: 25px;
+	border: 2px solid #fff;
+	background-color: #337AB7;
+	height: 50px;
+	width: 50px;
+}
+
+.main-container .delivery-page  .delivery-status .order-img> img{
+	height: 30px;
+	width:30px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.main-container .delivery-page  .delivery-status .status .caption{
+	font-weight: bold;
+	font-size: 13px;
+	margin: 5px;
+}
+
+.main-container .delivery-page  .delivery-status .bar{
+	/*border:2px solid red;*/
+	width: 95%;
+	border-radius: 0px;
+	height: 8px;
+	margin-bottom: 0px;
+	position: absolute;
+	top: 40px;
+	z-index: -1;
+	background-color: #e9dbdb;
+}
+
+.main-container .delivery-page  .delivery-status .progress-bar{
+	margin-left: 3px;
+	margin-bottom: 0px;
+	width: 70%;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+	.main-container .delivery-page  .delivery-status .status .order-img{
+		height: 40px;
+		width: 40px;
+	}
+
+	.main-container .delivery-page  .delivery-status .order-img> img{
+		height: 25px;
+		width:25px;
+		margin-top: 5px;
+	}
+	.main-container .delivery-page  .delivery-status .bar{
+		height: 5px;
+		top: 35px;
+		width: 77%;
+	}
+
+} 
+
+/*	End Delivery page 	*/
