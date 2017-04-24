@@ -450,3 +450,66 @@
     padding: 34px 40px 10px 40px;
     border: 2px solid #CFCFCF;
 }
+
+/*  product detail  */
+
+.product-detail
+{
+	margin-top: 100px;
+}
+
+.product-detail  ul > li{margin-right:25px;font-weight:lighter;cursor:pointer}
+.product-detail  li.active{border-bottom:3px solid silver;}
+
+.product-detail .item-photo{display:flex;justify-content:center;align-items:center;border-right:1px solid #f6f6f6;}
+.product-detail .item-photo img { max-height: 400px;}
+.product-detail .btn-success{width:100%;border-radius:0px;}
+.product-detail .section{width:100%;margin-left:-15px;padding:2px;padding-left:15px;padding-right:15px;background:#f8f9f9}
+.product-detail .title-price{margin-top:30px;margin-bottom:0px;color:black}
+.product-detail .title-attr{margin-top:0px;margin-bottom:0px;color:black;}
+.product-detail .btn-minus{cursor:pointer;font-size:7px;display:flex;align-items:center;padding:5px;padding-left:10px;padding-right:10px;border:1px solid gray;border-radius:2px;border-right:0px;}
+.product-detail .btn-plus{cursor:pointer;font-size:7px;display:flex;align-items:center;padding:5px;padding-left:10px;padding-right:10px;border:1px solid gray;border-radius:2px;border-left:0px;}
+.product-detail div.section > div {width:100%;display:inline-flex;}
+.product-detail div.section > div > input {margin:0px;padding-left:5px;font-size:10px;padding-right:5px;max-width:18%;text-align:center;}
+.product-detail .attr,.attr2{cursor:pointer;margin-right:5px;height:20px;font-size:10px;padding:2px;border:1px solid gray;border-radius:2px;}
+.product-detai .lattr.active,.attr2.active{ border:1px solid orange;}
+
+
+.product-detail .button-box
+{
+	margin-top: 10px;
+	padding: 10px 0 10px 0;
+	border: 2px solid black;
+	margin-left: -15px;
+}
+.product-detail .button-box .btn-cart 
+{
+	background-color: black;
+	border: none;
+}
+.product-detail .button-box .btn-buy 
+{
+	background-color: red;
+	border: none;
+}
+
+.product-detail .features
+{
+	border: 1px solid gray;
+	margin-top: 80px;
+}
+.product-detail .features h2
+{
+	border-bottom: 1px solid grey;
+	padding-bottom: 10px;
+}
+.product-detail .specification
+{
+	border: 1px solid gray;
+	margin-top: 40px;
+}
+.product-detail .specification h2
+{
+	border-bottom: 1px solid grey;
+	padding-bottom: 10px;
+}
