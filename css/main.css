@@ -12,6 +12,11 @@ a:focus,a:hover,a:visited{
     outline-offset:0;
 }
 
+.order-summary-page{
+	position: relative;
+	top: 120px;
+}
+
 .main-menu{
 	max-width: 900px;
 }
@@ -539,10 +544,6 @@ a:focus,a:hover,a:visited{
 	border-bottom: 1px solid grey;
 	padding-bottom: 10px;
 }
-=======
-/*		Review 		*/
-
-
 
 .main-container .review{
 	margin-top: 100px;
