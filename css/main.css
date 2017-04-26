@@ -469,13 +469,20 @@ a:focus,a:hover,a:visited{
     border: 2px solid #CFCFCF;
 }
 
-<<<<<<< HEAD
+
 /*  product detail  */
 
 .product-detail
 {
 	margin-top: 100px;
 }
+
+.item-container{	
+	top:120px;	
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
+
 
 .product-detail  ul > li{margin-right:25px;font-weight:lighter;cursor:pointer}
 .product-detail  li.active{border-bottom:3px solid silver;}
