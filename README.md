@@ -1,2 +1,2 @@
 # amigosaccessorize
-Online shoaping portal
+Online shopping portal
